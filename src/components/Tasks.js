@@ -1,4 +1,7 @@
-const tasks = [
+import { useState } from 'react'
+
+const Tasks = () => {
+  const [tasks, setTasks] = useState([
   {
     id: 1,
     text: 'Doctor Appointment',
@@ -17,9 +20,7 @@ const tasks = [
     day: 'Feb 5th at 2:30pm',
     reminder: false,
   }
-]
-
-const Tasks = () => {
+])
   return (
     <>
      {tasks.map((task) => (
